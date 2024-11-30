@@ -1,0 +1,13 @@
+[
+    {
+        "pattern": "eval(",
+        "description": "Avoid using eval(). It can execute arbitrary code.",
+        "remediation": "Replace eval() with safer alternatives like ast.literal_eval."
+    },
+    {
+        "pattern": "os.system(",
+        "description": "Avoid os.system(). It can lead to command injection.",
+        "remediation": "Use subprocess.run() instead of os.system()."
+    }
+]
+
